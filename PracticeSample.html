@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            CodePen - Demo Flexbox 3
+        </title>
+        <style>
+            body { padding: 2em;}
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            } 
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 5px;
+            }
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            .mainContentItem{
+                text-align: center;
+                background: deepskyblue;
+            }
+            article{
+                padding:10px;
+                margin:10px;
+                background: aqua;
+            }
+            .sideBarLeftItem{background: gold;}
+            .sideBarRightItem{background: hotpink;}
+            .sideBarItem{flex: 1 0 0;border:0px solid green;}
+            .mainContentItem{flex: 3 0px;}
+            .sideBarLeftItem{order: 1;}
+            .mainContentItem{order: 2;}
+            .sideBarRightItem{order: 3;}
+            </style>
+        </head>
+    <body>
+        <header class="headerContainer"><h1>Header - Sample flexbo example</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2> First Article</h2>
+                    <p>This part of the tutorial is about core JavaScript, the language itself.
+                        But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. We’ll keep the amount of browser-specific commands (like alert) to a minimum so that you don’t spend time on them if you plan to concentrate on another environment (like Node.js). We’ll focus on JavaScript in the browser in the next part of the tutorial.
+                        So first, let’s see how we attach a script to a webpage. For server-side environments (like Node.js), you can execute the script with a command like "node my.js".</p>
+                </article>
+                <article>
+                    <h2> Second Article</h2>
+                    <p>This part of the tutorial is about core JavaScript, the language itself.
+                        But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. We’ll keep the amount of browser-specific commands (like alert) to a minimum so that you don’t spend time on them if you plan to concentrate on another environment (like Node.js). We’ll focus on JavaScript in the browser in the next part of the tutorial.
+                        So first, let’s see how we attach a script to a webpage. For server-side environments (like Node.js), you can execute the script with a command like "node my.js".</p>
+                </article>
+                <article>
+                    <h2> Third Article</h2>
+                    <p>This part of the tutorial is about core JavaScript, the language itself.
+                        But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. We’ll keep the amount of browser-specific commands (like alert) to a minimum so that you don’t spend time on them if you plan to concentrate on another environment (like Node.js). We’ll focus on JavaScript in the browser in the next part of the tutorial.
+                        So first, let’s see how we attach a script to a webpage. For server-side environments (like Node.js), you can execute the script with a command like "node my.js".</p>
+                </article>
+                </section>
+                <sideBar class="sideBarItem sideBarLeftItem"> <div class="center"><p>Left side bar</p></div></sideBar>
+                <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right side bar</p></div></sideBar>
+                                 
+        </div>
+        <footer class="footerContainer"><h1>Footer - Sample flexbox footer</h1></footer>
+        </body>
+        </html>
